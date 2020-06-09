@@ -1,20 +1,21 @@
 import {ItemsType} from "../../types/type";
-import {act} from "react-dom/test-utils";
 
 const ADD_ITEM = 'ADD_ITEM'
 const DELETE_ITEM = 'DELETE_ITEM'
+const CHANGE_HEIGHT = 'CHANGE_HEIGHT'
 
 
 
 let initialState = {
+    userHeight: 180 as number,
     items: [
         {id: 0, date: '09.06.2020', weight: 90, waist: 86, chest: 104, arm: 39, leg: 68},
-        {id: 1, date: '09.06.2020', weight: 90, waist: 86, chest: 104, arm: 39, leg: 68},
-        {id: 2, date: '09.06.2020', weight: 90, waist: 86, chest: 104, arm: 39, leg: 68},
-        {id: 3, date: '09.06.2020', weight: 90, waist: 86, chest: 104, arm: 39, leg: 68},
-        {id: 4, date: '09.06.2020', weight: 90, waist: 86, chest: 104, arm: 39, leg: 68},
-        {id: 5, date: '09.06.2020', weight: 90, waist: 86, chest: 104, arm: 39, leg: 68},
-        {id: 6, date: '09.06.2020', weight: 90, waist: 86, chest: 104, arm: 39, leg: 68}
+        {id: 1, date: '10.06.2020', weight: 89, waist: 85, chest: 104, arm: 40, leg: 69},
+        {id: 2, date: '11.06.2020', weight: 90, waist: 85, chest: 105, arm: 41, leg: 69},
+        {id: 3, date: '12.06.2020', weight: 88, waist: 84, chest: 105, arm: 41, leg: 70},
+        {id: 4, date: '13.06.2020', weight: 88, waist: 83, chest: 107, arm: 41, leg: 70},
+        {id: 5, date: '14.06.2020', weight: 87, waist: 83, chest: 107, arm: 42, leg: 71},
+        {id: 6, date: '15.06.2020', weight: 86, waist: 82, chest: 108, arm: 43, leg: 72}
     ] as Array<ItemsType>
 }
 
@@ -38,6 +39,13 @@ const tableReducer = (state = initialState, action : ActionType) : InitialStateT
             }
         }
 
+        case CHANGE_HEIGHT: {
+            return {
+                ...state,
+                userHeight: action.userHeight
+            }
+        }
+
         default: {
             return state
         }
@@ -45,7 +53,7 @@ const tableReducer = (state = initialState, action : ActionType) : InitialStateT
     }
 }
 
-type ActionType = ActionCreatorAddType | ActionCreatorDeleteType
+type ActionType = ActionCreatorAddType | ActionCreatorDeleteType | ActionCreateChangeType
 
 export const addItem = (date : string, weight: number, waist: number,
                         chest: number, arm: number, leg: number) : ActionCreatorAddType => (
@@ -59,6 +67,12 @@ export const deleteItem = (id : number) : ActionCreatorDeleteType => ({type: DEL
 type ActionCreatorDeleteType = {
     type: typeof DELETE_ITEM,
     id: number
+}
+
+export const changeHeight = (userHeight : number) : ActionCreateChangeType => ({type: CHANGE_HEIGHT, userHeight})
+type ActionCreateChangeType = {
+    type: typeof CHANGE_HEIGHT,
+    userHeight: number
 }
 
 export default tableReducer

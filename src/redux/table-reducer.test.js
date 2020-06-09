@@ -1,4 +1,4 @@
-import tableReducer, {addItem, deleteItem} from "./table-reducer";
+import tableReducer, {addItem, changeHeight, deleteItem} from "./table-reducer";
 
 
 const testState = {
@@ -27,5 +27,11 @@ describe('table actions', () => {
         const action = deleteItem(2)
         const newState = tableReducer(testState, action)
         expect(newState.items.length).toBe(6)
+    })
+
+    it('change my height', () => {
+        const action = changeHeight(179)
+        const newState = tableReducer(testState, action)
+        expect(newState.userHeight).toBe(179)
     })
 })

@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4126d9d1-51fd-4b07-a5dd-828a4432bb44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/redux/table-reducer.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/type.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Chart/Chart.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Info/Info.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Table/Table.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TableElem/TableElem.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/table-reducer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/table-reducer.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/table-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/table-reducer.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,6 +32,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\ZamarShoo\Desktop\react-weight-tracking\node_modules\typescript\lib" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ZamarShoo\Desktop\react-weight-tracking\src\components" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -44,7 +49,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.table actions.count of items should be decremented">
+  <component name="RunManager" selected="Jest.table actions.change my height">
+    <configuration name="table actions.change my height" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/redux/table-reducer.test.js" />
+      <test-names>
+        <test-name value="table actions" />
+        <test-name value="change my height" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="table actions.count of items should be decremented" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -88,6 +107,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.table actions.change my height" />
         <item itemvalue="Jest.table actions.count of items should be decremented" />
         <item itemvalue="Jest.table actions.count of items should be incremented" />
       </list>
@@ -104,7 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1591712065832</updated>
       <workItem from="1591712068561" duration="1482000" />
-      <workItem from="1591714153188" duration="4515000" />
+      <workItem from="1591714153188" duration="5710000" />
     </task>
     <servers />
   </component>
