@@ -14,7 +14,13 @@ let initialState = {
         {id: 3, date: '12.06.2020', weight: 88, waist: 84, chest: 105, arm: 41, leg: 70},
         {id: 4, date: '13.06.2020', weight: 88, waist: 83, chest: 107, arm: 41, leg: 70},
         {id: 5, date: '14.06.2020', weight: 87, waist: 83, chest: 107, arm: 42, leg: 71},
-        {id: 6, date: '15.06.2020', weight: 86, waist: 82, chest: 108, arm: 43, leg: 72}
+        {id: 6, date: '15.06.2020', weight: 86, waist: 82, chest: 108, arm: 43, leg: 72},
+        {id: 7, date: '16.06.2020', weight: 90, waist: 86, chest: 104, arm: 39, leg: 68},
+        {id: 8, date: '17.06.2020', weight: 89, waist: 85, chest: 104, arm: 40, leg: 69},
+        {id: 9, date: '18.06.2020', weight: 90, waist: 85, chest: 105, arm: 41, leg: 69},
+        {id: 10, date: '19.06.2020', weight: 88, waist: 84, chest: 105, arm: 41, leg: 70},
+        {id: 11, date: '20.06.2020', weight: 88, waist: 83, chest: 107, arm: 41, leg: 70},
+        {id: 12, date: '21.06.2020', weight: 87, waist: 83, chest: 107, arm: 42, leg: 71},
     ] as Array<ItemsType>
 }
 

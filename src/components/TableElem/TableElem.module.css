@@ -1,0 +1,30 @@
+.liElem {
+    list-style-type: none;
+    border-bottom: 2px solid lavender;
+    height: 35px;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.liElem div {
+    position: relative;
+    height: 20px;
+    width: 16%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.liElem div:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    padding: 0
+}
+
+.delete {
+    cursor: pointer;
+}

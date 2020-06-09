@@ -6,3 +6,36 @@
     border-radius: 10px;
     padding: 30px;
 }
+.liElem {
+    list-style-type: none;
+    border-bottom: 2px solid lavender;
+    height: 35px;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.liElem div {
+    height: 20px;
+    width: 16%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tableElemWrapper {
+    height: 25vh;
+    overflow: hidden;
+
+}
+
+.tableElemWrapperIn {
+    overflow-y: scroll;
+    max-height: 100%;
+    scrollbar-width: none;
+}
+
+.tableElemWrapperIn::-webkit-scrollbar { /* chrome based */
+    width: 0px;  /* ширина scrollbar'a */
+    background: transparent;  /* опционально */
+}
