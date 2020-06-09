@@ -5,7 +5,6 @@ const DELETE_ITEM = 'DELETE_ITEM'
 const CHANGE_HEIGHT = 'CHANGE_HEIGHT'
 
 
-
 let initialState = {
     userHeight: 180 as number,
     items: [

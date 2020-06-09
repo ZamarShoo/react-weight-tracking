@@ -1,0 +1,8 @@
+.elem {
+    height: 40vh;
+    width: 44.5%;
+    background-color: white;
+    box-shadow: 0 10px 60px rgba(10,24,77,.25);
+    border-radius: 10px;
+    padding: 30px;
+}
