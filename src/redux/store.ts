@@ -7,9 +7,18 @@ let reducers = combineReducers({
     form: formReducer
 })
 
-const store = createStore(reducers,  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+type ReducerType = typeof reducers
 
+
+// @ts-ignore
+const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+
+const store = createStore(reducers,  devTools);
+
+// @ts-ignore
 window.store = store;
 
 
+
+export type AppStateType = ReturnType<ReducerType>
 export default store;
