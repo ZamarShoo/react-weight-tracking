@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4126d9d1-51fd-4b07-a5dd-828a4432bb44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/common/delete.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FormValidators/FormValidation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Table/TableForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/delete-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FormValidators/FormControls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FormValidators/FormControls.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Chart/Chart.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chart/Chart.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormValidators/FormValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormValidators/FormValidation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Info/Info.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info/Info.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Table/Table.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/Table.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Table/Table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/Table.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TableElem/TableElem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TableElem/TableElem.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TableElem/TableElem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TableElem/TableElem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/TableForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/TableForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/table-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/table-reducer.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -144,7 +143,9 @@
       <updated>1591712065832</updated>
       <workItem from="1591712068561" duration="1482000" />
       <workItem from="1591714153188" duration="14895000" />
-      <workItem from="1591738151248" duration="4744000" />
+      <workItem from="1591738151248" duration="5412000" />
+      <workItem from="1591784237221" duration="6855000" />
+      <workItem from="1591809898099" duration="1682000" />
     </task>
     <servers />
   </component>
@@ -163,16 +164,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/redux/table-reducer.ts</url>
-          <line>7</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

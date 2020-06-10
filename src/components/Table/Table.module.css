@@ -1,5 +1,5 @@
 .elem {
-    height: 40vh;
+    height: 50vh;
     width: 44.5%;
     background-color: white;
     box-shadow: 0 10px 60px rgba(10,24,77,.25);
@@ -24,7 +24,7 @@
 }
 
 .tableElemWrapper {
-    height: 25vh;
+    height: 40vh;
     overflow: hidden;
 
 }
@@ -35,7 +35,49 @@
     scrollbar-width: none;
 }
 
-.tableElemWrapperIn::-webkit-scrollbar { /* chrome based */
-    width: 0px;  /* ширина scrollbar'a */
-    background: transparent;  /* опционально */
+.tableElemWrapperIn::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+}
+
+.formTable {
+    display: -webkit-box;
+    display: flex;
+    margin-left: -5px;
+    margin-top: 10px
+}
+
+.formTable div {
+    height: 20px;
+    width: 16%;
+}
+
+.formTable div input {
+    font-family: 'Open Sans', sans-serif;
+    width: 50%;
+    outline: none;
+    border: 2px solid lavender;
+    border-radius: 10px;
+    display: block;
+    margin-left: 15px;
+}
+
+.formTable div:first-child input {
+    width: 102%;
+    margin-left: -5px;
+}
+
+.formTable button {
+    cursor: pointer;
+    padding: .2em 2em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: cornflowerblue;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
 }

@@ -8,19 +8,19 @@ const CHANGE_HEIGHT = 'CHANGE_HEIGHT'
 let initialState = {
     userHeight: 180 as number,
     items: [
-        {id: 0, date: '09.06.2020', weight: 90, waist: 86, chest: 104, arm: 39, leg: 68},
-        {id: 1, date: '10.06.2020', weight: 89, waist: 85, chest: 104, arm: 40, leg: 69},
-        {id: 2, date: '11.06.2020', weight: 90, waist: 85, chest: 105, arm: 41, leg: 69},
-        {id: 3, date: '12.06.2020', weight: 88, waist: 84, chest: 105, arm: 41, leg: 70},
-        {id: 4, date: '13.06.2020', weight: 88, waist: 83, chest: 107, arm: 41, leg: 70},
-        {id: 5, date: '14.06.2020', weight: 87, waist: 83, chest: 107, arm: 42, leg: 71},
-        {id: 6, date: '15.06.2020', weight: 86, waist: 82, chest: 108, arm: 43, leg: 72},
-        {id: 7, date: '16.06.2020', weight: 90, waist: 86, chest: 104, arm: 39, leg: 68},
-        {id: 8, date: '17.06.2020', weight: 89, waist: 85, chest: 104, arm: 40, leg: 69},
-        {id: 9, date: '18.06.2020', weight: 90, waist: 85, chest: 105, arm: 41, leg: 69},
-        {id: 10, date: '19.06.2020', weight: 88, waist: 84, chest: 105, arm: 41, leg: 70},
-        {id: 11, date: '20.06.2020', weight: 88, waist: 83, chest: 107, arm: 41, leg: 70},
-        {id: 12, date: '21.06.2020', weight: 87, waist: 83, chest: 107, arm: 42, leg: 71},
+        {id: 0, date: '2020-06-12', weight: 90, waist: 86, chest: 104, arm: 39, leg: 68},
+        {id: 1, date: '2020-06-13', weight: 89, waist: 85, chest: 104, arm: 40, leg: 69},
+        {id: 2, date: '2020-06-14', weight: 90, waist: 85, chest: 105, arm: 41, leg: 69},
+        {id: 3, date: '2020-06-15', weight: 88, waist: 84, chest: 105, arm: 41, leg: 70},
+        {id: 4, date: '2020-06-16', weight: 88, waist: 83, chest: 107, arm: 41, leg: 70},
+        {id: 5, date: '2020-06-17', weight: 87, waist: 83, chest: 107, arm: 42, leg: 71},
+        {id: 6, date: '2020-06-18', weight: 86, waist: 82, chest: 108, arm: 43, leg: 72},
+        {id: 7, date: '2020-06-19', weight: 90, waist: 86, chest: 104, arm: 39, leg: 68},
+        {id: 8, date: '2020-06-20', weight: 89, waist: 85, chest: 104, arm: 40, leg: 69},
+        {id: 9, date: '2020-06-21', weight: 90, waist: 85, chest: 105, arm: 41, leg: 69},
+        {id: 10, date: '2020-06-22', weight: 88, waist: 84, chest: 105, arm: 41, leg: 70},
+        {id: 11, date: '2020-06-23', weight: 88, waist: 83, chest: 107, arm: 41, leg: 70},
+        {id: 12, date: '2020-06-24', weight: 87, waist: 83, chest: 107, arm: 42, leg: 71},
     ] as Array<ItemsType>
 }
 
@@ -32,8 +32,10 @@ const tableReducer = (state = initialState, action : ActionType) : InitialStateT
             return {
                 ...state,
                 items: [...state.items,
-                    {id: state.items.length, date: action.date, weight: action.weight,
-                        waist: action.waist, chest: action.chest, arm: action.arm, leg: action.leg}]
+                    {id: state.items.length === 0 ? 0 : state.items[state.items.length - 1].id + 1,
+                        date: action.date, weight: action.weight,
+                        waist: action.waist, chest: action.chest,
+                        arm: action.arm, leg: action.leg}]
             }
         }
 

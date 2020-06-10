@@ -65,7 +65,7 @@ class Table extends React.Component<TableType>{
                         }
                         </div>
                     </div>
-                    <li><TableReduxForm onSubmit={ this.addOneItem }/></li>
+                    <TableReduxForm onSubmit={ this.addOneItem }/>
                 </ul>
             </div>
         )
