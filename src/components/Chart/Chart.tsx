@@ -1,14 +1,34 @@
 import React, {useEffect, useRef, useState} from "react";
 import s from './Chart.module.css'
-import { select, line, curveCardinal, scaleLinear, max } from "d3";
+import { select, line, curveCardinal, scaleLinear, max, min } from "d3";
+import {compose} from "redux";
+import {connect} from "react-redux";
+import {AppStateType} from "../../redux/store";
+import {ItemsType} from "../../../types/type";
 
+type mapStateToPropsType = {
+    items: Array<ItemsType>
+}
 
-const Chart = (props : any) => {
+type MapDispatchToPropsType = {
 
-    const [data, setData] = useState([86, 32, 86, 32, 10, 84, 38, 80, 2, 100])
+}
+
+type ChartType = mapStateToPropsType & MapDispatchToPropsType
+
+const mapStateToProps = (state : AppStateType) :  mapStateToPropsType => ({
+    items: state.table.items
+})
+
+const Chart: React.FC<ChartType> = React.memo((props : any) => {
+
     const svgRef = useRef()
 
     useEffect(() => {
+        // @ts-ignore
+        const data = props.items.map((elem) => {
+            return elem.weight
+        })
         // @ts-ignore
         const svg = select(svgRef.current)
 
@@ -18,15 +38,14 @@ const Chart = (props : any) => {
 
         const yScale = scaleLinear()
         // @ts-ignore
-            .domain([0, max(data)])
-            .range([300, 0])
-        // @ts-ignore
+            .domain([min(data), max(data)])
+            .range([280, 0])
         const myLine = line()
+        // @ts-ignore
             .x((value, index) => xScale(index))
             // @ts-ignore
             .y(value => yScale(value))
             .curve(curveCardinal)
-
         svg
             .selectAll('path')
             .data([data])
@@ -37,15 +56,18 @@ const Chart = (props : any) => {
             .attr('stroke', 'lavender')
             .attr('stroke-width', '3px')
             .attr('width', '100%')
-    }, [data])
+    }, [props.items])
 
     return (
         <div className={s.elem}>
-            <svg viewBox={'0 0 1240 300'}
+            <svg viewBox={'0 -9 1240 300'}
                 // @ts-ignore
                 ref={svgRef}></svg>
         </div>
     )
-}
+})
 
-export default Chart
+export default compose(
+    connect<mapStateToPropsType, MapDispatchToPropsType, {}, AppStateType>(
+        mapStateToProps, {})
+)(Chart)

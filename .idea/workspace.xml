@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4126d9d1-51fd-4b07-a5dd-828a4432bb44" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Chart/Chart.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chart/Chart.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Chart/Chart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chart/Chart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Info/Info.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info/Info.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +25,7 @@
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Users\ZamarShoo\Desktop\react-weight-tracking\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -142,7 +138,10 @@
       <workItem from="1591738151248" duration="5412000" />
       <workItem from="1591784237221" duration="6855000" />
       <workItem from="1591809898099" duration="1682000" />
-      <workItem from="1593348572721" duration="7471000" />
+      <workItem from="1593348572721" duration="12806000" />
+      <workItem from="1593424320823" duration="1271000" />
+      <workItem from="1593942066593" duration="1175000" />
+      <workItem from="1594053929146" duration="7193000" />
     </task>
     <servers />
   </component>
