@@ -56,11 +56,45 @@ const Chart: React.FC<ChartType> = React.memo((props : any) => {
             .attr('stroke', 'lavender')
             .attr('stroke-width', '3px')
             .attr('width', '100%')
+
+        svg
+            .selectAll('.myDot')
+            .data(data)
+            .join('circle')
+            .attr('class', 'myDot')
+            .attr('stroke', '#374072')
+            .attr('fill', 'white')
+            .attr('r', 4)
+            // @ts-ignore
+            .attr('cx', (value, index) => xScale(index))
+            .attr('cy', yScale)
+            // @ts-ignore
+            .on('mouseenter', (value, index) => {
+                svg.attr('cursor', 'pointer')
+                    .selectAll('.tooltip')
+                    .data([value])
+                    .join('text')
+                    .attr('class', 'tooltip')
+                    .text(value)
+                    .attr('x', xScale(index) - 8)
+                    .attr('y', yScale(value) - 8)
+                    .transition()
+                    .attr('opacity', 1)
+                    .attr('font-family', 'Open Sans')
+                    .attr('stroke', '#374072')
+                    .attr('font-size', 18)
+            })
+            // @ts-ignore
+            .on('mouseleave', (value, index) => {
+                svg.attr('cursor', 'default')
+                    .select('.tooltip').remove()
+                    .transition()
+            })
     }, [props.items])
 
     return (
         <div className={s.elem}>
-            <svg viewBox={'0 -9 1240 300'}
+            <svg viewBox={'-30 -30 1300 350'}
                 // @ts-ignore
                 ref={svgRef}></svg>
         </div>
