@@ -10,7 +10,8 @@ import {actions} from './../../redux/table-reducer'
 type mapStateToPropsType = {
     height: number,
     age: number,
-    sex: 'male' | 'female'
+    sex: 'male' | 'female',
+    item: number
 }
 
 type MapDispatchToPropsType = {
@@ -22,14 +23,15 @@ type MapDispatchToPropsType = {
 const mapStateToProps = (state : AppStateType) :  mapStateToPropsType => ({
     height: state.table.userHeight,
     age: state.table.userAge,
-    sex: state.table.userSex
+    sex: state.table.userSex,
+    item: state.table.items[state.table.items.length - 1].weight
 })
 
 type infoType = mapStateToPropsType & MapDispatchToPropsType
 
 const Info: React.FC<infoType> = React.memo((props) => {
     const sexEdentify = props.sex === 'male' ? 5 : -161;
-    const kcal = (10 * 100) + (6.25 * props.height) - (5 * props.age) + sexEdentify;
+    const kcal = (10 * props.item) + (6.25 * props.height) - (5 * props.age) + sexEdentify;
     const proteinsAndFat = (kcal / 100 * 30).toFixed(0);
     const carbohydrates = (kcal / 100 * 40).toFixed(0);
 

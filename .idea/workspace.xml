@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4126d9d1-51fd-4b07-a5dd-828a4432bb44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Info/PieInfoChart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Chart/Chart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chart/Chart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Info/Info.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info/Info.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Info/Info.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info/Info.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Table/Table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/Table.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/table-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/table-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TableElem/TableElem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TableElem/TableElem.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +155,7 @@
       <workItem from="1594053929146" duration="7193000" />
       <workItem from="1594112935080" duration="9848000" />
       <workItem from="1594212183940" duration="8800000" />
-      <workItem from="1594235531949" duration="6098000" />
+      <workItem from="1594235531949" duration="8897000" />
     </task>
     <servers />
   </component>

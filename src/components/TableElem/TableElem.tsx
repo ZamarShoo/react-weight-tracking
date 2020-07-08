@@ -12,7 +12,11 @@ const TableElem = (props : any) => {
             <div>{props.item.chest}</div>
             <div>{props.item.arm}</div>
             <div>{props.item.leg}</div>
-            <div><div className={s.delete} onClick={() => props.deleteItem(props.item.id)}><DeleteImage /></div></div>
+            <div>
+                {!props.shortItems &&
+                <div className={s.delete} onClick={() => props.deleteItem(props.item.id)}><DeleteImage /></div>
+                }
+            </div>
         </li>
     )
 }

@@ -40,8 +40,8 @@ class Table extends React.Component<TableType>{
     render() {
 
         let TableReduxForm = reduxForm({form: `tableform`})(TableForm);
-
-
+        let shortItems = false
+        if (this.props.items.length < 2) {shortItems = true}
         return (
             <div className={s.elem}>
                 <ul>
@@ -59,7 +59,7 @@ class Table extends React.Component<TableType>{
                         {
 
                             this.props.items.map(item => {
-                                return <TableElem item={item} key={item.id} deleteItem={this.deleteOneItem}/>
+                                return <TableElem item={item} key={item.id} deleteItem={this.deleteOneItem} shortItems={shortItems}/>
                             })
 
                         }
