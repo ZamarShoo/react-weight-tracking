@@ -19,6 +19,6 @@ const store = createStore(reducers,  devTools);
 window.store = store;
 
 
-
+export type InferActionsTypes<T> = T extends { [keys: string]: (...args: any[]) => infer U } ? U : never
 export type AppStateType = ReturnType<ReducerType>
 export default store;

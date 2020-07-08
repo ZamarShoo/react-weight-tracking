@@ -4,7 +4,7 @@ import {AppStateType} from "../../redux/store";
 import {ItemsType} from "../../../types/type";
 import { compose } from "redux";
 import {connect} from "react-redux";
-import {addItem, deleteItem} from "../../redux/table-reducer";
+import {actions} from "../../redux/table-reducer";
 import TableElem from "../TableElem/TableElem";
 import TableForm from "./TableForm";
 import {reduxForm} from "redux-form";
@@ -74,5 +74,5 @@ class Table extends React.Component<TableType>{
 
 export default compose(
     connect<mapStateToPropsType, MapDispatchToPropsType, {}, AppStateType>(
-        mapStateToProps, {addItem, deleteItem})
+        mapStateToProps, {addItem: actions.addItem, deleteItem: actions.deleteItem})
 )(Table)

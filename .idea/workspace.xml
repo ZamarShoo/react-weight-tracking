@@ -2,16 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4126d9d1-51fd-4b07-a5dd-828a4432bb44" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Info/PieInfoChart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Chart/Chart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chart/Chart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Table/Table.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/Table.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TableElem/TableElem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TableElem/TableElem.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Info/Info.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info/Info.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Info/Info.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info/Info.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/Table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/Table.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/table-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/table-reducer.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -144,7 +155,9 @@
       <workItem from="1593424320823" duration="1271000" />
       <workItem from="1593942066593" duration="1175000" />
       <workItem from="1594053929146" duration="7193000" />
-      <workItem from="1594112935080" duration="3210000" />
+      <workItem from="1594112935080" duration="9848000" />
+      <workItem from="1594212183940" duration="8800000" />
+      <workItem from="1594235531949" duration="6098000" />
     </task>
     <servers />
   </component>
