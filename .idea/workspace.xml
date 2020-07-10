@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4126d9d1-51fd-4b07-a5dd-828a4432bb44" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Info/Info.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info/Info.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Info/Info.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info/Info.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Table/Table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/Table.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TableElem/TableElem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TableElem/TableElem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Info/PieInfoChart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info/PieInfoChart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/Table.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/Table.module.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -156,6 +155,8 @@
       <workItem from="1594112935080" duration="9848000" />
       <workItem from="1594212183940" duration="8800000" />
       <workItem from="1594235531949" duration="8897000" />
+      <workItem from="1594311778190" duration="1393000" />
+      <workItem from="1594377721177" duration="8098000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {Fragment, useEffect, useState} from "react";
 import s from './Info.module.css'
 import {compose} from "redux";
 import {connect} from "react-redux";
@@ -79,10 +79,12 @@ const Info: React.FC<infoType> = React.memo((props) => {
     const onHeightChange = (e : any) => {
         setHeight(e.currentTarget.value)
     }
+    //@ts-ignore
+    const openDet = editSex ? 'open' : ''
 
     return (
         <div className={s.elem}>
-            <div>
+            <div className={s.wrapper}>
                 <div>
                     <p className={s.infoElem}>
                         <span>Age:</span>
@@ -99,21 +101,23 @@ const Info: React.FC<infoType> = React.memo((props) => {
                     <p className={s.infoElem}>
                         <span>Sex:</span>
                         {!editSex &&
-                        <span>{props.sex} < img src={change} onClick={editChangeSex} alt="change"/></span>
+                        <span>{props.sex}< img src={change} onClick={editChangeSex} alt="change"/></span>
                         }
                         {editSex &&
-                        <div>
+                            //@ts-ignore
+                        <a autoFocus={true}
+                           onBlur={deactivateEditSex}>
                             <label>
-                                <input type="radio" name={"sex"} onClick={onSexChange} value={'male'}
-                                       checked={sex === 'male' ? true : false} autoFocus={true} onBlur={deactivateEditSex}/>
+                                <input type="radio" name={"sex"} onChange={onSexChange} value={'male'}
+                                       checked={sex === 'male' ? true : false} />
                                 <span>Male</span>
                             </label>
-                            < label >
-                                < input type="radio" name={"sex"} onClick={onSexChange} value={'female'} autoFocus={true}
-                                        onBlur={deactivateEditSex} checked={sex === 'female' ? true : false}/>
+                            <label>
+                                < input type="radio" name={"sex"} onChange={onSexChange} value={'female'}
+                                        checked={sex === 'female' ? true : false} />
                                 <span>Female</span>
                             </label>
-                        </div>
+                        </a>
                         }
                     </p>
                     <p className={s.infoElem}>
