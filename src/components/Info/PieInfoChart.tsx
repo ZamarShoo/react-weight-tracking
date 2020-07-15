@@ -1,20 +1,26 @@
 import React, {useEffect, useRef} from "react";
-import s from './Info.module.css'
-import {select} from "d3-selection";
+//@ts-ignore
+import DonutChart from 'react-d3-donut';
+
 
 const PieInfoChart = React.memo((props : any) => {
-    const svgElem = useRef<SVGSVGElement>(null)
-    useEffect(() => {
-        const data = [props.proteins, props.fat, props.carbohydrates]
-        const svg = select(svgElem.current)
 
-    }, [props.proteins, props.fat, props.carbohydrates])
+    const data = [
+        {count: props.proteins, color: "#1f77b4", name: 'Proteins'},
+        {count: props.fat, color: "#ff7f0e", name: 'Fat'},
+        {count: props.carbohydrates, color: "#2ca02c", name: 'Carbohydrates'}
+    ]
 
     return (
-        <div className={s.pie}>
-            <svg viewBox={'0 0 300 300'}
-                 ref={svgElem}></svg>
-        </div>
+            <DonutChart
+                innerRadius={110}
+                outerRadius={150}
+                transition={true}
+                svgClass="example6"
+                pieClass="pie6"
+                displayTooltip={true}
+                strokeWidth={3}
+                data={data} />
     )
 })
 
