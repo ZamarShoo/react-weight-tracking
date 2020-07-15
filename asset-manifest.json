@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/react-weight-tracking/static/css/main.796a6d8e.chunk.css",
+    "main.js": "/react-weight-tracking/static/js/main.b2133f35.chunk.js",
+    "main.js.map": "/react-weight-tracking/static/js/main.b2133f35.chunk.js.map",
+    "runtime-main.js": "/react-weight-tracking/static/js/runtime-main.8e34fe08.js",
+    "runtime-main.js.map": "/react-weight-tracking/static/js/runtime-main.8e34fe08.js.map",
+    "static/css/2.09cd1ea1.chunk.css": "/react-weight-tracking/static/css/2.09cd1ea1.chunk.css",
+    "static/js/2.2e5a40c3.chunk.js": "/react-weight-tracking/static/js/2.2e5a40c3.chunk.js",
+    "static/js/2.2e5a40c3.chunk.js.map": "/react-weight-tracking/static/js/2.2e5a40c3.chunk.js.map",
+    "index.html": "/react-weight-tracking/index.html",
+    "precache-manifest.397f7d5ccd7740f49a1d96d3ce601973.js": "/react-weight-tracking/precache-manifest.397f7d5ccd7740f49a1d96d3ce601973.js",
+    "service-worker.js": "/react-weight-tracking/service-worker.js",
+    "static/css/2.09cd1ea1.chunk.css.map": "/react-weight-tracking/static/css/2.09cd1ea1.chunk.css.map",
+    "static/css/main.796a6d8e.chunk.css.map": "/react-weight-tracking/static/css/main.796a6d8e.chunk.css.map",
+    "static/js/2.2e5a40c3.chunk.js.LICENSE.txt": "/react-weight-tracking/static/js/2.2e5a40c3.chunk.js.LICENSE.txt",
+    "static/media/change.svg": "/react-weight-tracking/static/media/change.039ab089.svg",
+    "static/media/delete-icon.svg": "/react-weight-tracking/static/media/delete-icon.709a1071.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e34fe08.js",
+    "static/css/2.09cd1ea1.chunk.css",
+    "static/js/2.2e5a40c3.chunk.js",
+    "static/css/main.796a6d8e.chunk.css",
+    "static/js/main.b2133f35.chunk.js"
+  ]
+}
